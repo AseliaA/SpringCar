@@ -22,7 +22,7 @@ public class CarServiceImpl implements CarService{
 
     @Override
     public Car findCarById(Long id) {
-        return this.findCarById(id);
+        return carRepository.findById(id).get();
     }
 
     @Override
